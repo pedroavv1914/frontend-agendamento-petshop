@@ -1,0 +1,13 @@
+.agenda-list {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding: 0 18px 22px 18px;
+  }
+  
+  @media (max-width: 600px) {
+    .agenda-list {
+      padding: 0 4px 70px 4px;
+      gap: 18px;
+    }
+  }

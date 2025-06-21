@@ -1,0 +1,17 @@
+.date-filter {
+  background: #23243a;
+  color: #fff;
+  border: 1.5px solid #6c63ff44;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 1em;
+  outline: none;
+  font-weight: 500;
+  box-shadow: 0 1px 6px #0001;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.date-filter:focus {
+  border: 1.5px solid #6c63ff;
+  box-shadow: 0 0 0 2px #6c63ff22;
+}

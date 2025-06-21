@@ -1,0 +1,567 @@
+.period-card {
+  background: #181925;
+  border-radius: 16px;
+  padding: 18px 18px 12px 18px;
+  box-shadow: 0 2px 8px #0005;
+  margin-bottom: 20px;
+  border: 1.5px solid #22232f;
+  transition: box-shadow 0.18s, border 0.18s;
+  position: relative;
+}
+
+.period-card:hover {
+  box-shadow: 0 16px 48px #6c63ff33, 0 2px 12px #0008;
+  border: 1.5px solid #6c63ff88;
+  transform: translateY(-2px) scale(1.015);
+  z-index: 2;
+}
+
+.period-title {
+  font-weight: 700;
+  font-size: 1.22em;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
+.period-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 2.5px solid #23243a;
+  box-shadow: 0 1.5px 8px #0002;
+}
+
+/* === Agendamento Item Layout === */
+.agendamento-item {
+  display: grid;
+  grid-template-columns: 70px 1.5fr 1fr 110px;
+  align-items: center;
+  padding: 14px 0 14px 0;
+  margin-bottom: 14px;
+  border-bottom: 1.5px solid #25263c;
+  background: #23243a;
+  border-radius: 12px;
+  margin-top: 10px;
+  transition: background 0.18s, box-shadow 0.18s, transform 0.10s;
+  gap: 0;
+}
+.agendamento-item > * {
+  align-self: center;
+}
+.agendamento-item:hover {
+  box-shadow: 0 1px 8px #0002;
+  cursor: pointer;
+}
+.agendamento-item:active {
+  background: #23243a;
+  transform: scale(0.985);
+}
+
+/* === Informações do Agendamento === */
+.agendamento-hora strong {
+  color: #fff;
+  font-size: 1.15em;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+.agendamento-pet-tutor {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+.pet-nome {
+  font-size: 1.08em;
+  font-weight: 600;
+  color: #e0e0e0;
+  margin-bottom: 4px;
+  letter-spacing: 0.2px;
+}
+.tutor {
+  color: #aaa;
+  font-size: 0.96em;
+  margin-top: 1px;
+  font-style: italic;
+}
+.agendamento-servico .servico {
+  color: #b5b5c7;
+  font-size: 0.98em;
+  font-weight: 500;
+}
+
+/* === Botão Excluir === */
+.del-btn {
+  background: none !important;
+  color: #ff4d4f;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 16px;
+  cursor: pointer;
+  font-size: 1em;
+  opacity: 0.7;
+  transition: opacity 0.2s, background 0.2s;
+  margin-left: 10px;
+  font-weight: 600;
+}
+.agendamento-item:hover .del-btn {
+  opacity: 1;
+  background: none !important;
+}
+.del-btn:active {
+  color: #c62828;
+  opacity: 0.7;
+}
+
+/* === Estado Vazio === */
+.vazio {
+  color: #b5b5e7;
+  font-style: italic;
+  padding: 18px 0 18px 0;
+  text-align: center;
+  font-size: 1.13em;
+  opacity: 0.7;
+  letter-spacing: 0.5px;
+  background: linear-gradient(90deg, #23243a 80%, #292a43 100%);
+  border-radius: 10px;
+  margin: 12px 0 8px 0;
+  box-shadow: 0 1px 8px #0001;
+}
+.agendamento-item {
+  display: grid;
+  grid-template-columns: 70px 1.5fr 1fr 110px;
+  align-items: center;
+  padding: 14px 0 14px 0;
+  margin-bottom: 14px;
+  border-bottom: 1.5px solid #25263c;
+  background: #23243a;
+  border-radius: 12px;
+  margin-top: 10px;
+  transition: background 0.18s, box-shadow 0.18s, transform 0.10s;
+  gap: 0;
+}
+
+.agendamento-item {
+  display: grid;
+  grid-template-columns: 70px 1.5fr 1fr 110px;
+  align-items: center;
+  padding: 14px 0 14px 0;
+  margin-bottom: 14px;
+  border-bottom: 1.5px solid #25263c;
+  background: #23243a;
+  border-radius: 12px;
+  margin-top: 10px;
+  transition: background 0.18s, box-shadow 0.18s, transform 0.10s;
+  gap: 0;
+}
+.agendamento-item > * {
+  align-self: center;
+}
+.agendamento-item:hover {
+  box-shadow: 0 1px 8px #0002;
+  cursor: pointer;
+}
+.agendamento-item:active {
+  background: #23243a;
+  transform: scale(0.985);
+}
+
+/* === Informações do Agendamento === */
+.agendamento-hora strong {
+  color: #fff;
+  font-size: 1.15em;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+.agendamento-pet-tutor {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+.pet-nome {
+  font-size: 1.08em;
+  font-weight: 600;
+  color: #e0e0e0;
+  margin-bottom: 4px;
+  letter-spacing: 0.2px;
+}
+.tutor {
+  color: #aaa;
+  font-size: 0.96em;
+  margin-top: 1px;
+  font-style: italic;
+}
+.agendamento-servico .servico {
+  color: #b5b5c7;
+  font-size: 0.98em;
+  font-weight: 500;
+}
+
+/* === Botão Excluir === */
+.del-btn {
+  background: none !important;
+  color: #ff4d4f;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 16px;
+  cursor: pointer;
+  font-size: 1em;
+  opacity: 0.7;
+  transition: opacity 0.2s, background 0.2s;
+  margin-left: 10px;
+  font-weight: 600;
+}
+.agendamento-item:hover .del-btn {
+  opacity: 1;
+  background: none !important;
+}
+.del-btn:active {
+  color: #c62828;
+  opacity: 0.7;
+}
+
+/* === Estado Vazio === */
+.vazio {
+  color: #b5b5e7;
+  font-style: italic;
+  padding: 18px 0 18px 0;
+  text-align: center;
+  font-size: 1.13em;
+  opacity: 0.7;
+  letter-spacing: 0.5px;
+  background: linear-gradient(90deg, #23243a 80%, #292a43 100%);
+  border-radius: 10px;
+  margin: 12px 0 8px 0;
+  box-shadow: 0 1px 8px #0001;
+}
+.agendamento-item > * {
+  align-self: center;
+}
+
+.agendamento-item:hover {
+  box-shadow: 0 1px 8px #0002;
+  cursor: pointer;
+}
+.agendamento-item:active {
+  background: #23243a;
+  transform: scale(0.985);
+}
+.del-btn {
+  background: none;
+  border: none;
+  color: #b5b5c7;
+  font-size: 0.97em;
+  font-weight: 600;
+  padding: 0 0 0 10px;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  opacity: 0.85;
+  cursor: pointer;
+  transition: color 0.15s, opacity 0.15s;
+}
+.del-btn:hover {
+  color: #ff4d4f;
+  opacity: 1;
+  text-decoration: underline;
+}
+.del-btn:active {
+  color: #c62828;
+  opacity: 0.7;
+}
+.vazio {
+  color: #b5b5e7;
+  font-style: italic;
+  padding: 18px 0 18px 0;
+  text-align: center;
+  font-size: 1.13em;
+  opacity: 0.7;
+  letter-spacing: 0.5px;
+  background: linear-gradient(90deg, #23243a 80%, #292a43 100%);
+  border-radius: 10px;
+  margin: 12px 0 8px 0;
+  box-shadow: 0 1px 8px #0001;
+}
+.period-card:hover {
+  box-shadow: 0 8px 32px #6c63ff22, 0 1.5px 0 #393a50 inset;
+  border: 1.5px solid #6c63ff44;
+}
+
+.period-card:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.period-title {
+  font-weight: 700;
+  font-size: 1.22em;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+.period-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 2.5px solid #23243a;
+  box-shadow: 0 1.5px 8px #0002;
+}
+.agendamento-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 0 13px 0;
+  margin-bottom: 7px;
+  border-bottom: 1.5px solid #25263c;
+  background: #292a43cc;
+  border-radius: 12px;
+  margin-top: 7px;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 8px #0001;
+}
+.agendamento-item:last-child {
+  border-bottom: none;
+}
+.agendamento-item strong {
+  color: #6c63ff;
+  font-size: 1.12em;
+  letter-spacing: 0.5px;
+}
+.agendamento-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+}
+.agendamento-item strong {
+  color: #fff;
+  font-size: 1.15em;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+.pet-nome {
+  font-size: 1.08em;
+  font-weight: 600;
+  color: #e0e0e0;
+  margin-bottom: 4px;
+  letter-spacing: 0.2px;
+}
+.servico {
+  color: #b5b5c7;
+  font-size: 0.97em;
+  font-weight: 500;
+  margin-bottom: 4px;
+  padding: 0;
+  text-align: left;
+  font-style: normal;
+  opacity: 0.95;
+}
+.tutor {
+  color: #8e8ea0;
+  font-size: 0.93em;
+  margin-bottom: 2px;
+  font-style: italic;
+}
+.agendamento-item strong {
+  color: #fff;
+  font-size: 1.15em;
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+}
+.pet-nome {
+  font-size: 1.08em;
+  font-weight: 600;
+  color: #e0e0e0;
+  margin-bottom: 2px;
+  letter-spacing: 0.2px;
+}
+.servico {
+  color: #b5b5c7;
+  font-size: 0.97em;
+  font-weight: 500;
+  margin-bottom: 1px;
+  padding: 0;
+  text-align: left;
+  font-style: normal;
+  opacity: 0.95;
+}
+.tutor {
+  color: #8e8ea0;
+  font-size: 0.93em;
+  margin-bottom: 2px;
+  font-style: italic;
+}
+.pet-nome {
+  font-size: 1.09em;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1px;
+  letter-spacing: 0.2px;
+}
+.servico {
+  color: #b5b5e7;
+  font-size: 0.98em;
+  font-weight: 500;
+  margin-bottom: 2px;
+  padding: 0;
+  text-align: left;
+  font-style: normal;
+  opacity: 1;
+}
+.vazio {
+  color: #b5b5e7;
+  font-style: italic;
+  padding: 16px 0 10px 0;
+  text-align: center;
+  font-size: 1.08em;
+  opacity: 0.8;
+}
+.agendamento-item strong {
+    font-size: 1.09em;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 1px;
+    letter-spacing: 0.2px;
+  }
+  .servico {
+    color: #b5b5e7;
+    font-size: 0.98em;
+    font-weight: 500;
+  }
+  .tutor {
+    color: #aaa;
+    font-size: 0.96em;
+    margin-top: 1px;
+  }
+  .del-btn {
+    background: none !important;
+    color: #ff4d4f;
+    border: none;
+    border-radius: 8px;
+    padding: 7px 16px;
+    cursor: pointer;
+    font-size: 1em;
+    opacity: 0.7;
+    transition: opacity 0.2s, background 0.2s;
+    margin-left: 10px;
+    font-weight: 600;
+  }
+  .agendamento-item:hover .del-btn {
+    opacity: 1;
+    background: none !important;
+  }
+  .vazio {
+    color: #888;
+    font-style: italic;
+    padding: 12px 0;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .period-title {
+      font-weight: 700;
+      font-size: 1.12em;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      letter-spacing: 0.5px;
+      color: #fff;
+      background: none;
+      padding: 0 2px 0 0;
+    }
+    .period-emoji {
+      font-size: 1.15em;
+      margin-right: 2px;
+    }
+    .period-horario {
+      margin-left: auto;
+      color: #bdbdbd;
+      font-weight: 500;
+      font-size: 0.98em;
+      letter-spacing: 0.1px;
+    }
+  
+    .agendamento-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 12px 0 12px 0;
+      margin-bottom: 12px;
+      border-bottom: 1.2px solid #25263c;
+      background: #23232b;
+      border-radius: 10px;
+      margin-top: 8px;
+      transition: background 0.18s, box-shadow 0.18s, transform 0.10s;
+      gap: 0;
+      box-shadow: 0 1.5px 6px #0004;
+      border: 1px solid #23243a;
+    }
+  
+    .del-btn {
+      background: none;
+      border: none;
+      font-size: 0.97em;
+      font-weight: 500;
+      cursor: pointer;
+      padding: 0;
+      margin-left: auto;
+      transition: color 0.18s;
+      text-align: right;
+      opacity: 0.85;
+    }
+    .del-btn:hover {
+      text-decoration: underline;
+      background: none;
+      opacity: 1;
+      color: #fff;
+    }
+    .del-btn:active {
+      opacity: 0.7;
+      color: #c3c3ff;
+    }
+  
+    .vazio {
+      color: #bdbdbd;
+      text-align: center;
+      padding: 16px 0 8px 0;
+      font-size: 1em;
+    }
+  
+    /* Responsividade extra para telas pequenas */
+    @media (max-width: 600px) {
+      .period-title {
+        font-size: 1em;
+        gap: 5px;
+        padding: 0 1px 0 0;
+      }
+      .period-emoji {
+        font-size: 1em;
+      }
+      .period-horario {
+        font-size: 0.9em;
+      }
+      .agendamento-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 6px 10px 6px;
+        gap: 4px;
+      }
+      .del-btn {
+        align-self: flex-end;
+        margin-right: 18px;
+        margin-top: 14px;
+        margin-bottom: 8px;
+        font-size: 0.95em;
+      }
+    }
+  }
+  
