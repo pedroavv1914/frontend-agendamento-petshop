@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+* {
+  padding: 14px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
   display: flex;
   flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 32px 24px 0 24px;
+  margin-bottom: 18px;
+}
+
+header h1 {
+  font-size: 2em;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin: 0 0 12px 0;
+  color: #fff;
+  text-shadow: 0 2px 16px #6c63ff22;
+  line-height: 1.2;
+}
+
+.novo-body, html {
+  background: #15161e;
+  color: #fff;
+  font-family: 'Inter', Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.brand-header {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
+  font-size: 1.12em;
+  font-weight: 700;
+  color: #6c63ff;
+  padding: 28px 24px 0 24px;
+  letter-spacing: 1px;
 }
 
-.App-link {
-  color: #61dafb;
+.brand-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: linear-gradient(120deg, #FFD700 60%, #6c63ff 100%);
+  display: inline-block;
+  box-shadow: 0 2px 12px #6c63ff44;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.novo-btn {
+  background: #6c63ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  padding: 10px 24px;
+  font-size: 1em;
+  letter-spacing: 1px;
+  box-shadow: none;
+  transition: background 0.2s;
+  margin-left: auto;
+  margin-top: 38px;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.novo-btn:hover {
+  background: #554fd8;
+}
+
+@media (max-width: 600px) {
+  .novo-btn {
+    width: 100%;
+    margin: 0 0 12px 0;
+    font-size: 1.08em;
+    justify-content: center;
   }
-  to {
-    transform: rotate(360deg);
+  header {
+    padding: 24px 12px 0 12px;
+    gap: 10px;
   }
 }
