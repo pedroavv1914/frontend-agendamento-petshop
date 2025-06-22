@@ -60,8 +60,7 @@ frontend-petshop/
    ```
 
 ## 🖼️ Screenshots
-![Petshop Frontend Screenshot](public/logo192.png)
-*Example interface – replace with your own screenshot!*
+![Petshop Frontend Screenshot](public/screenshot.png)
 
 ## 🤝 Contributing
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
